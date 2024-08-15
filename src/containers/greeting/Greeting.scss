@@ -44,13 +44,15 @@
 }
 
 .greeting-text-p {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 40px;
+  list-style-type: none;
 }
 
 .greeting-image-div > img {
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
+  border-radius: 50%;
 }
 
 .wave-emoji {

@@ -34,7 +34,11 @@ export default function Greeting() {
                     : "greeting-text-p subTitle"
                 }
               >
-                {greeting.subTitle}
+                {greeting.subTitle.map((item, index) => (
+                  <li key={index} className={isDark ? "dark-mode greeting-list-item" : "greeting-list-item"}>
+                    {item}
+                  </li>
+              ))}
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
@@ -56,8 +60,8 @@ export default function Greeting() {
               <DisplayLottie animationData={landingPerson} />
             ) : (
               <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
+                alt="Picture of me"
+                src={require("../../assets/images/headshot.JPG")}
               ></img>
             )}
           </div>

@@ -121,6 +121,16 @@
   margin-top: 2rem;
 }
 
+.experienceList {
+  list-style-type: none; /* Removes bullet points */
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: center;
+  padding: 0%;
+  margin-left:2rem;
+  margin-right:1.7rem;
+}
+
 /* Media Query */
 
 @media (max-width: 1380px) {

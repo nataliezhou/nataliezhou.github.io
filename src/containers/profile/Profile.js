@@ -48,5 +48,5 @@ export default function Profile() {
     );
   } else {
     return <Contact />;
-  }
+    }
 }

@@ -13,14 +13,14 @@
 }
 
 .contact-title {
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 400;
 }
 
 .contact-detail,
 .contact-detail-email {
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 400;
   color: $subTitle;
   text-decoration: none;
@@ -34,7 +34,9 @@
 }
 
 .contact-subtitle {
-  text-transform: uppercase;
+  // text-transform: uppercase;
+  // italic font
+  font-style: italic;
 }
 
 .contact-text-div {

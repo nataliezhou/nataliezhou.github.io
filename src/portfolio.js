@@ -27,10 +27,10 @@ const greeting = {
       "🧑‍🎓 4th-year CS+Statistics student @ UIUC"
     ),
     emoji(
-      "💻 Prospective software engineer from San Jose, CA"
+      "💻  Prospective software engineer from San Jose, CA"
     ),
     emoji(
-      "🌟 Excited about building impactful products with creative solutions"
+      "🌟  Excited about building impactful products with creative solutions"
     )
   ],
   resumeLink:
@@ -54,15 +54,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I'm up to",
-  subTitle: "Hands-on building, one tech stack at a time.",
+  subTitle: "Hands-on building, one tech stack at a time",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Developing full-stack web applications with React, Node.js, Flask"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Experimenting with applications of deep learning and generative AI models"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+      "⚡ CS124 Honors student mentor and Intro to CS course assistant"
+    ),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -70,16 +70,36 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "kotlin",
+      fontAwesomeClassname: "ti ti-brand-kotlin"
+    },
+    {
+      skillName: "C++",
+      fontAwesomeClassname: "bx bxl-c-plus-plus"
+    },
+    {
+      skillName: "Go",
+      fontAwesomeClassname: "bx bxl-go-lang"
+    },
+    {
+      skillName: "rust",
+      fontAwesomeClassname: "fab fa-rust"
+    },
+    {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
     },
     {
       skillName: "JavaScript",
@@ -94,14 +114,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
     },
@@ -110,16 +122,16 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "google cloud platform",
+      fontAwesomeClassname: "fas fa-cloud"
     },
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "kubernetes",
+      fontAwesomeClassname: "bx bxl-kubernetes"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -131,23 +143,26 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of Illinois at Urbana-Champaign",
+      logo: require("./assets/images/uiucLogo.png"),
+      subHeader: "Bachelor of Science in Computer Science & Statistics",
+      duration: "August 2021 - May 2025",
+      desc:  "Dean's List, CS124 Honors student mentor, CS124 course assistant",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Relevant coursework: Data Structures & Algorithms, Artificial Intelligence, Databases, Systems Programming, Computer Architecture, Linear Algebra...",
+        "Women in Computer Science (WCS) member, HackIllinois participant",
+        "ImagiNation Dance Crew, Sigma Psi Zeta Sorority academic chair"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "National University of Singapore",
+      logo: require("./assets/images/nusLogo.png"),
+      subHeader: "Exchange student at the School of Computing (SoC)",
+      duration: "Jan 2024 - May 2024",
+      desc: "LAS Global Engagement Scholar and one of 4% NUS computer science applicants accepted",
+      descBullets: [
+        "Relevant coursework: Parallel and Concurrent Programming, Human-Computer Interaction",
+      ]
     }
   ]
 };
@@ -155,7 +170,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -179,30 +194,36 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Software Engineer Intern",
+      company: "Guidewire Software",
+      companylogo: require("./assets/images/gwreLogo.png"),
+      date: "May 2024 – Aug 2024",
+      desc: "Copilot developer",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Building + finetuning an AI code copilot for real-time code generation and chat window, using Java and Python",
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Data Science Intern",
+      company: "IBM",
+      companylogo: require("./assets/images/ibmLogo.png"),
+      date: "May 2023 – Aug 2023",
+      desc: "Resource distribution insights",
+      descBullets: [
+        "Automating Python data visualization, building predictive model, data pipeline engineering"
+      ]    
     },
     {
       role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+      company: "Workiva",
+      companylogo: require("./assets/images/workivaLogo.png"),
+      date: "May 2022 – May 2023",
+      desc: "Graph backend team",
+      descBullets: [
+        "Implementing graph database backend features in Kotlin/Java, enabling efficient storage/retrieval of large-scale graph data",
+      ]
+    },
+    
   ]
 };
 
@@ -210,15 +231,15 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: true, // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "Personal + academic projects inspired by my interests! ",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
@@ -244,7 +265,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -305,7 +326,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -329,7 +350,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -348,7 +369,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -361,7 +382,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -376,19 +397,19 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Discuss a project, chat about potential employment opportunities, or just want to say hi? Send me a message!",
+  number: "+1-650-380-9806",
+  email_address: "nzhou13@illinois.edu"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
